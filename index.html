@@ -26,15 +26,15 @@
         </div>
         <div class="flex gap-2">
             <div class="bg-[#ECFFF0] flex gap-4 items-center px-6 py-2 rounded-4xl">
-                <span>0</span>
+                <span id="nav-heart">0</span>
                 <img src="./assets/heart.png" class="w-6" alt="">
             </div>
             <div class="bg-[#ECFFF0] flex gap-4 items-center px-6 py-2 rounded-4xl">
-                <span>100</span>
+                <span id="coin">100</span>
                 <img src="./assets/coin.png" class="w-6" alt="">
             </div>
             <div class="bg-[#00A63E] text-white font-medium flex gap-2 items-center px-6 py-2 rounded-4xl">
-                <span>0</span>
+                <span id="nav-copy">0</span>
                 <span>Copy</span>
             </div>
         </div>
@@ -61,190 +61,190 @@
 
                 <!-- card 1 -->
 
-                <div class="p-8 bg-white shadow-lg rounded-lg">
+                <div class="card p-8 bg-white shadow-lg rounded-lg">
                     <div class="flex justify-between items-center">
                         <div class="bg-[#FFE3E2] p-3 rounded-2xl"><img src="./assets/emergency.png" class="w-8" alt=""></div>
-                        <div><i class="fa-regular fa-heart text-xl"></i></div>
+                        <div><button class="card-heart"><i class="fa-regular fa-heart text-xl"></i></button></div>
                     </div>
                     <div class="leading-8 my-8">
                         <h2 class="font-semibold text-[24px]">National Emergency Number</h2>
-                        <p class="roboto font-normal text-[18px] text-gray-500">National Emergency</p>
+                        <p class="subtitle roboto font-normal text-[18px] text-gray-500">National Emergency Service</p>
                     </div>
                     <div class="my-8">
                         <h1 class="font-semibold text-3xl">999</h1>
-                        <p class="my-2"><span class="bg-[#F2F2F2] rounded-4xl px-4 py-2 text-gray-500">All</span></p>
+                        <p class="my-2"><span class="bg-[#F2F2F2] rounded-4xl px-3 py-1 text-gray-500">All</span></p>
                     </div>
                     <div class="w-full flex gap-3">
-                        <button class="btn py-1 border border-[#D4D5D6] rounded-lg flex-1 text-gray-500"><i class="fa-regular fa-copy mr-1"></i>Copy</button>
-                        <button class="btn py-1 bg-[#00A63E] text-white rounded-lg flex-1"><i class="fa-solid fa-phone mr-1"></i>Call</button>
+                        <button class="copy-btn btn py-1 border border-[#D4D5D6] rounded-lg flex-1 text-gray-500"><i class="fa-regular fa-copy mr-1"></i>Copy</button>
+                        <button class="call-btn btn py-1 bg-[#00A63E] text-white rounded-lg flex-1"><i class="fa-solid fa-phone mr-1"></i>Call</button>
                     </div>
                 </div>
 
                 <!-- card 2 -->
 
-                <div class="p-8 bg-white shadow-lg rounded-lg">
+                <div class="card p-8 bg-white shadow-lg rounded-lg">
                     <div class="flex justify-between items-center">
                         <div class="bg-[#FFE3E2] p-3 rounded-2xl"><img src="./assets/police.png" class="w-8" alt=""></div>
-                        <div><i class="fa-regular fa-heart text-xl"></i></div>
+                        <div><button class="card-heart"><i class="fa-regular fa-heart text-xl"></i></button></div>
                     </div>
                     <div class="leading-8 my-8">
                         <h2 class="font-semibold text-[24px]">Police Helpline Number</h2>
-                        <p class="roboto font-normal text-[18px] text-gray-500">Police</p>
+                        <p class="subtitle roboto font-normal text-[18px] text-gray-500">Police</p>
                     </div>
                     <div class="my-8">
                         <h1 class="font-semibold text-3xl">999</h1>
-                        <p class="my-2"><span class="bg-[#F2F2F2] rounded-4xl px-4 py-2 text-gray-500">Police</span></p>
+                        <p class="my-2"><span class="bg-[#F2F2F2] rounded-4xl px-3 py-1 text-gray-500">Police</span></p>
                     </div>
                     <div class="w-full flex gap-3">
-                        <button class="btn py-1 border border-[#D4D5D6] rounded-lg flex-1 text-gray-500"><i class="fa-regular fa-copy mr-1"></i>Copy</button>
-                        <button class="btn py-1 bg-[#00A63E] text-white rounded-lg flex-1"><i class="fa-solid fa-phone mr-1"></i>Call</button>
+                        <button class="copy-btn btn py-1 border border-[#D4D5D6] rounded-lg flex-1 text-gray-500"><i class="fa-regular fa-copy mr-1"></i>Copy</button>
+                        <button class="call-btn btn py-1 bg-[#00A63E] text-white rounded-lg flex-1"><i class="fa-solid fa-phone mr-1"></i>Call</button>
                     </div>
                 </div>
 
                 <!-- card 3 -->
 
-                <div class="p-8 bg-white shadow-lg rounded-lg">
+                <div class="card p-8 bg-white shadow-lg rounded-lg">
                     <div class="flex justify-between items-center">
                         <div class="bg-[#FFE3E2] p-3 rounded-2xl"><img src="./assets/fire-service.png" class="w-8" alt=""></div>
-                        <div><i class="fa-regular fa-heart text-xl"></i></div>
+                        <div><button class="card-heart"><i class="fa-regular fa-heart text-xl"></i></button></div>
                     </div>
                     <div class="leading-8 my-8">
                         <h2 class="font-semibold text-[24px]">Fire Service Number</h2>
-                        <p class="roboto font-normal text-[18px] text-gray-500">Fire Service</p>
+                        <p class="subtitle roboto font-normal text-[18px] text-gray-500">Fire Service</p>
                     </div>
                     <div class="my-8">
                         <h1 class="font-semibold text-3xl">999</h1>
-                        <p class="my-2"><span class="bg-[#F2F2F2] rounded-4xl px-4 py-2 text-gray-500">Fire</span></p>
+                        <p class="my-2"><span class="bg-[#F2F2F2] rounded-4xl px-3 py-1 text-gray-500">Fire</span></p>
                     </div>
                     <div class="w-full flex gap-3">
-                        <button class="btn py-1 border border-[#D4D5D6] rounded-lg flex-1 text-gray-500"><i class="fa-regular fa-copy mr-1"></i>Copy</button>
-                        <button class="btn py-1 bg-[#00A63E] text-white rounded-lg flex-1"><i class="fa-solid fa-phone mr-1"></i>Call</button>
+                        <button class="copy-btn btn py-1 border border-[#D4D5D6] rounded-lg flex-1 text-gray-500"><i class="fa-regular fa-copy mr-1"></i>Copy</button>
+                        <button class="call-btn btn py-1 bg-[#00A63E] text-white rounded-lg flex-1"><i class="fa-solid fa-phone mr-1"></i>Call</button>
                     </div>
                 </div>
 
                 <!-- card 4 -->
 
-                <div class="p-8 bg-white shadow-lg rounded-lg">
+                <div class="card p-8 bg-white shadow-lg rounded-lg">
                     <div class="flex justify-between items-center">
                         <div class="bg-[#FFE3E2] p-3 rounded-2xl"><img src="./assets/ambulance.png" class="w-8" alt=""></div>
-                        <div><i class="fa-regular fa-heart text-xl"></i></div>
+                        <div><button class="card-heart"><i class="fa-regular fa-heart text-xl"></i></button></div>
                     </div>
                     <div class="leading-8 my-8">
                         <h2 class="font-semibold text-[24px]">Ambulance Service</h2>
-                        <p class="roboto font-normal text-[18px] text-gray-500">Ambulance</p>
+                        <p class="subtitle roboto font-normal text-[18px] text-gray-500">Ambulance</p>
                     </div>
                     <div class="my-8">
                         <h1 class="font-semibold text-3xl">1994-999999</h1>
-                        <p class="my-2"><span class="bg-[#F2F2F2] rounded-4xl px-4 py-2 text-gray-500">Health</span></p>
+                        <p class="my-2"><span class="bg-[#F2F2F2] rounded-4xl px-3 py-1 text-gray-500">Health</span></p>
                     </div>
                     <div class="w-full flex gap-3">
-                        <button class="btn py-1 border border-[#D4D5D6] rounded-lg flex-1 text-gray-500"><i class="fa-regular fa-copy mr-1"></i>Copy</button>
-                        <button class="btn py-1 bg-[#00A63E] text-white rounded-lg flex-1"><i class="fa-solid fa-phone mr-1"></i>Call</button>
+                        <button class="copy-btn btn py-1 border border-[#D4D5D6] rounded-lg flex-1 text-gray-500"><i class="fa-regular fa-copy mr-1"></i>Copy</button>
+                        <button class="call-btn btn py-1 bg-[#00A63E] text-white rounded-lg flex-1"><i class="fa-solid fa-phone mr-1"></i>Call</button>
                     </div>
                 </div>
 
                 <!-- card 5 -->
 
-                <div class="p-8 bg-white shadow-lg rounded-lg">
+                <div class="card p-8 bg-white shadow-lg rounded-lg">
                     <div class="flex justify-between items-center">
                         <div class="bg-[#FFE3E2] p-3 rounded-2xl"><img src="./assets/emergency.png" class="w-8" alt=""></div>
-                        <div><i class="fa-regular fa-heart text-xl"></i></div>
+                        <div><button class="card-heart"><i class="fa-regular fa-heart text-xl"></i></button></div>
                     </div>
                     <div class="leading-8 my-8">
                         <h2 class="font-semibold text-[24px]">Women & Child Helpline</h2>
-                        <p class="roboto font-normal text-[18px] text-gray-500">Women & Child Helpline</p>
+                        <p class="subtitle roboto font-normal text-[18px] text-gray-500">Women & Child Helpline</p>
                     </div>
                     <div class="my-8">
                         <h1 class="font-semibold text-3xl">109</h1>
-                        <p class="my-2"><span class="bg-[#F2F2F2] rounded-4xl px-4 py-2 text-gray-500">Help</span></p>
+                        <p class="my-2"><span class="bg-[#F2F2F2] rounded-4xl px-3 py-1 text-gray-500">Help</span></p>
                     </div>
                     <div class="w-full flex gap-3">
-                        <button class="btn py-1 border border-[#D4D5D6] rounded-lg flex-1 text-gray-500"><i class="fa-regular fa-copy mr-1"></i>Copy</button>
-                        <button class="btn py-1 bg-[#00A63E] text-white rounded-lg flex-1"><i class="fa-solid fa-phone mr-1"></i>Call</button>
+                        <button class="copy-btn btn py-1 border border-[#D4D5D6] rounded-lg flex-1 text-gray-500"><i class="fa-regular fa-copy mr-1"></i>Copy</button>
+                        <button class="call-btn btn py-1 bg-[#00A63E] text-white rounded-lg flex-1"><i class="fa-solid fa-phone mr-1"></i>Call</button>
                     </div>
                 </div>
 
                 <!-- card 6 -->
 
-                <div class="p-8 bg-white shadow-lg rounded-lg">
+                <div class="card p-8 bg-white shadow-lg rounded-lg">
                     <div class="flex justify-between items-center">
                         <div class="bg-[#FFE3E2] p-3 rounded-2xl"><img src="./assets/emergency.png" class="w-8" alt=""></div>
-                        <div><i class="fa-regular fa-heart text-xl"></i></div>
+                        <div><button class="card-heart"><i class="fa-regular fa-heart text-xl"></i></button></div>
                     </div>
                     <div class="leading-8 my-8">
                         <h2 class="font-semibold text-[24px]">Anti-Corruption Helpline</h2>
-                        <p class="roboto font-normal text-[18px] text-gray-500">Anti-Corruption</p>
+                        <p class="subtitle roboto font-normal text-[18px] text-gray-500">Anti-Corruption</p>
                     </div>
                     <div class="my-8">
                         <h1 class="font-semibold text-3xl">106</h1>
-                        <p class="my-2"><span class="bg-[#F2F2F2] rounded-4xl px-4 py-2 text-gray-500">Govt.</span></p>
+                        <p class="my-2"><span class="bg-[#F2F2F2] rounded-4xl px-3 py-1 text-gray-500">Govt.</span></p>
                     </div>
                     <div class="w-full flex gap-3">
-                        <button class="btn py-1 border border-[#D4D5D6] rounded-lg flex-1 text-gray-500"><i class="fa-regular fa-copy mr-1"></i>Copy</button>
-                        <button class="btn py-1 bg-[#00A63E] text-white rounded-lg flex-1"><i class="fa-solid fa-phone mr-1"></i>Call</button>
+                        <button class="copy-btn btn py-1 border border-[#D4D5D6] rounded-lg flex-1 text-gray-500"><i class="fa-regular fa-copy mr-1"></i>Copy</button>
+                        <button class="call-btn btn py-1 bg-[#00A63E] text-white rounded-lg flex-1"><i class="fa-solid fa-phone mr-1"></i>Call</button>
                     </div>
                 </div>
 
                 <!-- card 7 -->
 
-                <div class="p-8 bg-white shadow-lg rounded-lg">
+                <div class="card p-8 bg-white shadow-lg rounded-lg">
                     <div class="flex justify-between items-center">
                         <div class="bg-[#FFE3E2] p-3 rounded-2xl"><img src="./assets/emergency.png" class="w-8" alt=""></div>
-                        <div><i class="fa-regular fa-heart text-xl"></i></div>
+                        <div><button class="card-heart"><i class="fa-regular fa-heart text-xl"></i></button></div>
                     </div>
                     <div class="leading-8 my-8">
                         <h2 class="font-semibold text-[24px]">Electricity Helpline</h2>
-                        <p class="roboto font-normal text-[18px] text-gray-500">Electricity Outage</p>
+                        <p class="subtitle roboto font-normal text-[18px] text-gray-500">Electricity Outage</p>
                     </div>
                     <div class="my-8">
                         <h1 class="font-semibold text-3xl">16216</h1>
-                        <p class="my-2"><span class="bg-[#F2F2F2] rounded-4xl px-4 py-2 text-gray-500">Electricity</span></p>
+                        <p class="my-2"><span class="bg-[#F2F2F2] rounded-4xl px-3 py-1 text-gray-500">Electricity</span></p>
                     </div>
                     <div class="w-full flex gap-3">
-                        <button class="btn py-1 border border-[#D4D5D6] rounded-lg flex-1 text-gray-500"><i class="fa-regular fa-copy mr-1"></i>Copy</button>
-                        <button class="btn py-1 bg-[#00A63E] text-white rounded-lg flex-1"><i class="fa-solid fa-phone mr-1"></i>Call</button>
+                        <button class="copy-btn btn py-1 border border-[#D4D5D6] rounded-lg flex-1 text-gray-500"><i class="fa-regular fa-copy mr-1"></i>Copy</button>
+                        <button class="call-btn btn py-1 bg-[#00A63E] text-white rounded-lg flex-1"><i class="fa-solid fa-phone mr-1"></i>Call</button>
                     </div>
                 </div>
 
                 <!-- card 8 -->
 
-                <div class="p-8 bg-white shadow-lg rounded-lg">
+                <div class="card p-8 bg-white shadow-lg rounded-lg">
                     <div class="flex justify-between items-center">
                         <div class="bg-[#FFE3E2] p-3 rounded-2xl"><img src="./assets/brac.png" class="w-8" alt=""></div>
-                        <div><i class="fa-regular fa-heart text-xl"></i></div>
+                        <div><button class="card-heart"><i class="fa-regular fa-heart text-xl"></i></button></div>
                     </div>
                     <div class="leading-8 my-8">
                         <h2 class="font-semibold text-[24px]">Brac Helpline</h2>
-                        <p class="roboto font-normal text-[18px] text-gray-500">Brac</p>
+                        <p class="subtitle roboto font-normal text-[18px] text-gray-500">Brac</p>
                     </div>
                     <div class="my-8">
                         <h1 class="font-semibold text-3xl">16445</h1>
-                        <p class="my-2"><span class="bg-[#F2F2F2] rounded-4xl px-4 py-2 text-gray-500">NGO</span></p>
+                        <p class="my-2"><span class="bg-[#F2F2F2] rounded-4xl px-3 py-1 text-gray-500">NGO</span></p>
                     </div>
                     <div class="w-full flex gap-3">
-                        <button class="btn py-1 border border-[#D4D5D6] rounded-lg flex-1 text-gray-500"><i class="fa-regular fa-copy mr-1"></i>Copy</button>
-                        <button class="btn py-1 bg-[#00A63E] text-white rounded-lg flex-1"><i class="fa-solid fa-phone mr-1"></i>Call</button>
+                        <button class="copy-btn btn py-1 border border-[#D4D5D6] rounded-lg flex-1 text-gray-500"><i class="fa-regular fa-copy mr-1"></i>Copy</button>
+                        <button class="call-btn btn py-1 bg-[#00A63E] text-white rounded-lg flex-1"><i class="fa-solid fa-phone mr-1"></i>Call</button>
                     </div>
                 </div>
 
                 <!-- card 9 -->
 
-                <div class="p-8 bg-white shadow-lg rounded-lg">
+                <div class="card p-8 bg-white shadow-lg rounded-lg">
                     <div class="flex justify-between items-center">
                         <div class="bg-[#FFE3E2] p-3 rounded-2xl"><img src="./assets/emergency.png" class="w-8" alt=""></div>
-                        <div><i class="fa-regular fa-heart text-xl"></i></div>
+                        <div><button class="card-heart"><i class="fa-regular fa-heart text-xl"></i></button></div>
                     </div>
                     <div class="leading-8 my-8">
                         <h2 class="font-semibold text-[24px]">Bangladesh Railway Helpline </h2>
-                        <p class="roboto font-normal text-[18px] text-gray-500">Bangladesh Railway</p>
+                        <p class="subtitle roboto font-normal text-[18px] text-gray-500">Bangladesh Railway</p>
                     </div>
                     <div class="my-8">
                         <h1 class="font-semibold text-3xl">163</h1>
-                        <p class="my-2"><span class="bg-[#F2F2F2] rounded-4xl px-4 py-2 text-gray-500">Travel</span></p>
+                        <p class="my-2"><span class="bg-[#F2F2F2] rounded-4xl px-3 py-1 text-gray-500">Travel</span></p>
                     </div>
                     <div class="w-full flex gap-3">
-                        <button class="btn py-1 border border-[#D4D5D6] rounded-lg flex-1 text-gray-500"><i class="fa-regular fa-copy mr-1"></i>Copy</button>
-                        <button class="btn py-1 bg-[#00A63E] text-white rounded-lg flex-1"><i class="fa-solid fa-phone mr-1"></i>Call</button>
+                        <button class="copy-btn btn py-1 border border-[#D4D5D6] rounded-lg flex-1 text-gray-500"><i class="fa-regular fa-copy mr-1"></i>Copy</button>
+                        <button class="call-btn btn py-1 bg-[#00A63E] text-white rounded-lg flex-1"><i class="fa-solid fa-phone mr-1"></i>Call</button>
                     </div>
                 </div>
             </div>
@@ -256,10 +256,15 @@
                     <div>
                         <p class="font-medium text-xl"><i class="fa-solid fa-clock-rotate-left mr-1"></i>Call History</p>
                     </div> 
-                    <button class="bg-[#00A63E] text-white font-medium px-6 py-2 rounded-4xl">Clear</button>
+                    <button id="clear-btn" class="bg-[#00A63E] text-white font-medium px-6 py-2 rounded-4xl">Clear</button>
+                </div>
+                <div id="history-list">
+
                 </div>
             </div>
         </div>
     </section>
+
+    <script src="#"></script>
 </body>
 </html>
