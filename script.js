@@ -1,52 +1,96 @@
-// html code chunk
-// --- ১. হার্ট আইকন ও উইশলিস্ট কাউন্টার লজিক ---
-const heartButtons = document.querySelectorAll('.card-heart');
-const navHeartCount = document.getElementById('nav-heart');
-let currentHeartCount = 0;
+const heartButton = document.querySelectorAll('.card-heart');
+const heartCount = document.getElementById('nav-heart');
+let currentCount = 0;
 
-for (const button of heartButtons) {
-    button.addEventListener('click', function() {
+for(const button of heartButton){
+    button.addEventListener('click', function(){
+
         const icon = this.querySelector('i');
-        
-        if (icon.classList.contains('fa-regular')) {
+
+        if(icon.classList.contains('fa-regular')){
             icon.classList.remove('fa-regular');
             icon.classList.add('fa-solid', 'text-red-500');
-            currentHeartCount++;
-        } else {
+            currentCount++;
+        }
+        else{
             icon.classList.remove('fa-solid', 'text-red-500');
             icon.classList.add('fa-regular');
-            currentHeartCount--;
+            currentCount--;
         }
-        navHeartCount.textContent = currentHeartCount;
-    });
+
+        heartCount.textContent = currentCount;
+    })
 }
 
-
-// --- ২. কল বাটন এবং কয়েন আপডেট লজিক ---
 const callButtons = document.querySelectorAll('.call-btn');
-const coinCountEl = document.getElementById('coin');
+const coin = document.getElementById('coin');
+const historyList = document.getElementById('history-list');
 
-for (const button of callButtons) {
-    button.addEventListener('click', function() {
-        // বর্তমান কয়েন সংখ্যা টেক্সট থেকে নাম্বারে রূপান্তর করা
-        let currentCoins = parseInt(coinCountEl.textContent);
-        
-        // কন্ডিশন চেক: ২০ কয়েন এর কম থাকলে অ্যালার্ট দেখাবে
-        if (currentCoins < 20) {
-            alert("Sorry, you do not have enough coins!");
-            return; // কয়েন কম থাকলে কোড এখানেই থেমে যাবে
+
+
+for(const button of callButtons){
+    button.addEventListener('click', function(){
+
+        const card = this.closest('.card');
+        const serviceTitle = card.querySelector('h2').textContent;
+        const service = card.querySelector('.subtitle').textContent;
+        const serviceNum = card.querySelector('h1').textContent;
+        const now = new Date();
+        const exactTime = now.toLocaleTimeString('en-US', {
+                hour: '2-digit',
+                minute: '2-digit',
+                second: '2-digit',
+                hour12: true
+            });
+
+        if(parseInt(coin.textContent) < 20){
+            alert("You don't have enough coins");
+            return;
         }
-        
-        // ক্লিক করা বাটনের সাপেক্ষে কার্ডের নাম ও নাম্বার খুঁজে বের করা
-        const card = this.closest('.card'); 
-        const serviceName = card.querySelector('h2').textContent; 
-        const serviceNumber = card.querySelector('h1').textContent; 
-        
-        // প্রথম অ্যালার্ট: নাম ও নাম্বার দেখানো
-        alert(`Calling ${serviceName} (${serviceNumber})`);
-        
-        // ইউজার 'OK' তে ক্লিক করার পর ২০ কয়েন কমবে এবং নেভবারে আপডেট হবে
-        currentCoins -= 20;
-        coinCountEl.textContent = currentCoins;
-    });
+
+        alert(`📞 Calling ${service} ${serviceNum} ....`);
+        coin.textContent -= 20;
+
+        const div = document.createElement('div');
+        div.className = 'flex justify-between items-center p-3 my-3 bg-[#FAFAFA] rounded-lg';
+        div.innerHTML = `
+                        <div>
+                            <h2 class="roboto font-semibold text-[16px]">${serviceTitle}</h2>
+                            <p class="font-normal text-[18px] text-gray-500">${serviceNum}</p>
+                        </div>
+                        <div>
+                            ${exactTime}
+                        </div>
+        `
+        historyList.prepend(div);
+    })
+}
+
+document.getElementById('clear-btn')
+    .addEventListener('click', function(){
+        historyList.innerHTML = ``;
+    })
+
+
+const copyButtons = document.querySelectorAll('.copy-btn');
+const copyCount = document.getElementById('nav-copy');
+let currentCopy = 0;
+
+for(const button of copyButtons){
+    button.addEventListener('click', function(){
+
+        const card = this.closest('.card');
+        const textElement = card.querySelector('.hotline-number');
+        const textToCopy = textElement.innerText;
+        navigator.clipboard.writeText(textToCopy).then(() => {
+            button.innerHTML = `<i class="fa-regular fa-clipboard"></i>Copied`
+
+            setTimeout(() => {
+                button.innerHTML = `<i class="fa-regular fa-copy mr-1"></i>Copy`
+            }, 2000);
+        })
+
+        currentCopy++;
+        copyCount.textContent = currentCopy;
+    })
 }
